@@ -101,22 +101,18 @@ alias ....='cd ../../..'
 
 # pacman
 #
-alias pacu='sudo pacman -Syu'
-alias paci='sudo pacman -S'
-alias pacr='sudo pacman -Rs'
-alias pacrf='sudo pacman -Rns'
+alias pacu='pacman -Syu'
+alias paci='pacman -S'
+alias pacr='pacman -Rs'
+alias pacrf='pacman -Rns'
 alias pacs='pacman -Ss'
 
 # systemd
 #
 alias sc='systemctl'
-alias ssc='sudo systemctl'
 alias scu='systemctl --user'
-alias jc='sudo journalctl'
-alias journ='sudo journalctl -b -f'
-alias poweroff='sudo systemctl poweroff'
-alias reboot='sudo systemctl reboot'
-alias suspend='sudo systemctl suspend'
+alias jc='journalctl'
+alias journ='journalctl -b -n 500 -f'
 
 # grep
 #
@@ -138,10 +134,6 @@ alias vdir='vdir --color=auto'
 # vi
 #
 alias vi='vim'
-alias sv='sudoedit'
-
-# sudo fix
-alias sudo='sudo '
 
 # git
 alias gita='git add '
